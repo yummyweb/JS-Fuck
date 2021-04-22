@@ -10,6 +10,14 @@ interface MapType {
     j: string,
     S: string,
     C: string,
+    p: string,
+    m: string,
+    t: string,
+    i: string,
+    n: string,
+    l: string,
+    u: string,
+    s: string,
 }
 
 module.exports = {
