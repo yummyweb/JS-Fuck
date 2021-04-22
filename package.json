@@ -5,9 +5,12 @@
   "main": "build/index.js",
   "scripts": {
     "start": "node build/index",
-    "build": "tsc index.ts --outDir build"
+    "build": "tsc index.ts --outDir build --lib es6"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.41"
+  }
 }

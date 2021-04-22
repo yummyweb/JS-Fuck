@@ -1,14 +1,16 @@
-const zero = "+[]"
-const one = "+!![]"
+const MapType = require('./types')
 
-const number = n => {
+const zero: string = "+[]"
+const one: string = "+!![]"
+
+const number = (n: number) => {
     if (n === 0) return zero;
     return Array.from({length: n}, () => one).join(' + ');
 }
 
-const map = {}
+const map: MapType = {}
 
-const fromString = s => s.split('').map(x => {
+const fromString = (s: string) => s.split('').map(x => {
     return map[x]
 }).join('+')
 
